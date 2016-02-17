@@ -1,6 +1,10 @@
-<h2>
-    <em>Artist:</em>
-</h2>
-  <h3>
-    <%= artist.artistn %>
-  </h3>
+
+
+    <div class = "col-md-3 artist">
+      <%= image_tag artist.image.url class: 'img-responsive' if artist.image.present? %>
+    <h3 class = "text-center">
+      <%= artist.artistn %>
+      <%= link_to "delete", artist, method: :delete %>
+      
+    </h3>
+    </div>

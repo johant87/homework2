@@ -1,0 +1,5 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+Justin:
+  artistn: Justin Bieber
+  image: http://cdn3.thr.com/sites/default/files/2013/11/9713_01_0270.jpg

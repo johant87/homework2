@@ -9,7 +9,40 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
- *= require_tree .
- *= require_self
+
+
  */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+body {
+  background-color: #1D292B;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.artist {
+  background-color: #303E41;
+  max-width: 400px;
+  padding: 0;
+  margin: 100px 25px 100px 25px;
+  border-radius: 5px;
+}
+
+.artist img {
+  max-width: 400px;
+  padding: 0;
+  margin: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.artist h3 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
