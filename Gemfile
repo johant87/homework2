@@ -2,6 +2,13 @@ source 'https://rubygems.org'
 gem 'carrierwave'
 gem 'bootstrap-sass'
 gem 'sass-rails'
+group :development, :test do
+  gem 'spring-commands-rspec'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'rb-fsevent' if `uname` =~ /Darwin/
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use postgresql as the database for Active Record

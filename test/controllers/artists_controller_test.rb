@@ -20,4 +20,11 @@ class ArtistsControllerTest < ActionController::TestCase
     assert_redirected_to root_path( assigns( :artist ) )
  end
 
+test "Destroy artist" do
+    assert_difference('Artist.count', -1) do
+      delete :destroy, id: artists(:kanye).id
+    end
+    assert_redirected_to root_path
+    end
+
 end
