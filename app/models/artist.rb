@@ -1,5 +1,5 @@
 class Artist < ActiveRecord::Base
-  has_many :song 
-  accepts_nested_attributes_for :song
+  has_many :songs, dependent: :nullify
+  accepts_nested_attributes_for :songs
   mount_uploader :image, ImageUploader
 end
