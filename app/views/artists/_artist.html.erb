@@ -1,10 +1,8 @@
-
-
     <div class = "col-md-3 artist">
-      <%= image_tag artist.image %>
+      <%= image_tag artist.image, class: "img-responsive" %>
     <h3 class = "text-center">
-      <%= artist.artistn %>
+      <%= link_to artist.artistn, artist %> -
       <%= link_to "delete", artist, method: :delete %>
-      <%= link_to artist.artistn, artist %>
+
     </h3>
     </div>
