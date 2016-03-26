@@ -1,3 +1,13 @@
+<%= image_tag @artist.image %>
 
 <h1><%= @artist.artistn %></h1>
-<%= image_tag @artist.image.url if @artist.image.present? %>
+<%= link_to "Edit artist", edit_artist_path, class: "btn btn-default" %>
+<%= link_to "Delete artist", artist_path, class: "btn btn-default", method: :delete %></h1>
+
+
+<h2>Songs</h2>
+<% @artist.songs.each do |song| %>
+  <p><%= link_to song.title, artist_song_path(@artist.id, song.id) %></p>
+<% end %>
+
+<%= link_to "New song", new_artist_song_path(@artist.id), class: "btn btn-default" %>
