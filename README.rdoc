@@ -8,5 +8,5 @@ A simple ruby on rails music library with Rspec testing
 
 * Add/delete songs
 
-* Add artist avatar with carrierwave
+* Add artist photograph with carrierwave
 
